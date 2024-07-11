@@ -26,7 +26,6 @@ public class UserController {
 	
 	@GetMapping("/{id}")
 	public Users findStudentById(@PathVariable int id) {
-		System.out.println("working fine");
 		return userDAORepository.findById(id).orElse(new Users());
 
 	}
